@@ -31,8 +31,11 @@ header{
     background: #3c3c3c;
     width: 100%;
     text-align: center;
-    padding: 50px 0 10px 0;
+    padding: 40px 0 10px 0;
     color:#efefef;
+}
+header p {
+    font-size: 1.1rem;
 }
 main {
     flex: 1;
@@ -70,6 +73,9 @@ section.info1{
 section.info2{
     margin: 20px 20px 0 20px;
 }
+section.info2 h4{
+    margin-bottom: 6px;
+}
 section h2{
     color: #5c99ca;
     font-size: 16px;
@@ -78,6 +84,7 @@ section h2{
 .contact .item {
     display: flex;
     align-items: center;
+    margin-bottom: 0.2rem;
 }
 .contact svg {
     width: 25px;
@@ -147,3 +154,10 @@ main section h4:not(:first-child){
       height: 100px;
     }
 } 
+.icon {
+    width: 0.5rem;
+    height: 0.5rem;
+    vertical-align: -0.15rem;
+    fill: currentColor;
+    overflow: hidden;
+ }
