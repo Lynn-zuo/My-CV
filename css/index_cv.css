@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font: 14px/1.5 Arial;
+    color: #666;
+    background: #efefef;
+}
+#page{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.layout{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+    color:#5c99ca;
+}
+a:hover{
+    color:#3300FF;
+}
+header{
+    background: #3c3c3c;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 10px 0;
+    color:#efefef;
+}
+main {
+    flex: 1;
+    min-height: calc(100vh - 162px);
+}
+header > h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+aside{
+    width: 240px;
+    border-right: 1px solid #ccc;
+    position: relative;
+    padding-top: 100px;
+}
+aside .avatar{
+    text-align: center;
+    position: absolute;
+    top: -110px;
+    width: 100%;
+}
+aside .avatar img {
+    width: 120px;
+    height: 168px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+section{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+section.info1{
+    margin: 0px 20px 0 20px;
+}
+section.info2{
+    margin: 20px 20px 0 20px;
+}
+section h2{
+    color: #5c99ca;
+    font-size: 16px;
+    margin-bottom:10px;
+}
+.contact .item {
+    display: flex;
+    align-items: center;
+}
+.contact svg {
+    width: 25px;
+    height: 25px;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.contact .item span {
+    margin-left: 10px;
+}
+.personal .item span:first-child {
+    display: inline-block;
+    width: 80px;
+}
+.personal .item span:last-child::before {
+    content: ':';
+    margin-right: 10px;
+}
+.skills .item {
+    display: flex;
+    align-items: center;
+}
+.skills .keyword {
+    width: 80px;
+}
+.skills .rule {
+    flex: 1;
+    height: 4px;
+    background: #ccc;
+}
+.skills .rule i {
+    display: block;
+    width: 10%;
+    height: 4px;
+    background: #000;
+}
+main section {
+    border-bottom: 1px solid #ccc;
+    margin: 30px 20px 0 20px;
+    padding-bottom: 20px;
+}
+main section h4{
+    margin-bottom:10px;
+}
+main section h4:not(:first-child){
+    margin-top:15px;
+}
+
+@media only screen and  (max-width: 768px) {
+    header {
+      padding-top: 20px;
+      padding-bottom: 90px;
+    }
+    aside {
+      width: 100%;
+      padding-top: 30px;
+    }
+    aside .avatar {
+        top: -80px;
+    }
+    aside .avatar img {
+      width: 70px;
+      height: 100px;
+    }
+} 
