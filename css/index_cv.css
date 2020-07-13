@@ -68,7 +68,7 @@ section{
     padding-bottom: 10px;
 }
 section.info1{
-    margin: 0px 20px 0 20px;
+    margin: -28px 20px 0 20px;
 }
 section.info2{
     margin: 20px 20px 0 20px;
@@ -100,30 +100,16 @@ svg:not(:root) {
     margin-left: 10px;
 }
 .personal .item span:first-child {
+    margin-top: 0.2rem;
     display: inline-block;
-    width: 80px;
+    width: 3.8rem;
 }
 .personal .item span:last-child::before {
     content: ':';
     margin-right: 10px;
 }
 .skills .item {
-    display: flex;
-    align-items: center;
-}
-.skills .keyword {
-    width: 80px;
-}
-.skills .rule {
-    flex: 1;
-    height: 4px;
-    background: #ccc;
-}
-.skills .rule i {
-    display: block;
-    width: 10%;
-    height: 4px;
-    background: #000;
+    margin-top: 0.2rem;
 }
 main section {
     border-bottom: 1px solid #ccc;
@@ -132,6 +118,12 @@ main section {
 }
 main section h4{
     margin-bottom:10px;
+}
+main section li {
+    margin-left: 1rem;
+}
+main section p {
+    text-indent: 1rem;
 }
 main section h4:not(:first-child){
     margin-top:15px;
