@@ -5,14 +5,11 @@
 body{
     font: 15px/1.5 Arial;
 }
+/*头部*/
 header{
     width:100%;
     background: url(../imgs/bkg1.jpg) center center no-repeat;
     background-size: cover;
-}
-.layout{
-    max-width:900px;
-    margin: 0 auto;
 }
 .navbar{
     display:flex;
@@ -21,8 +18,8 @@ header{
 }
 .navbar img{
     height:150px;
-    margin-left:10px;
-    margin-top:10px;
+    margin-left:2rem;
+    margin-top:1rem;
     border-radius: 47%;
 }
 .navbar nav{
@@ -44,7 +41,7 @@ header .detail{
 }
 header h1{
     margin-left:90px;
-    font-size:46px;
+    font-size:3.5rem;
     color:#666;
 }
 header p{
@@ -61,24 +58,40 @@ header .action img{
     width: 30px;
     height: 32px;
 }
-main{
-    width:100%;
+/*开源项目和作品*/
+
+main.layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width:980px;
+    margin: 0 auto;
 }
-main h2{
-    font-size:46px;
+main h1{
+    font-size:3.5rem;
     color:#666;
     margin-top:30px;
     text-align: center;
 }
-main section{
+main section.project{
     display:flex;
-    max-width:900px;
+    flex-direction: column;
+    max-width:980px;
     margin-top:20px;
 }
-main section .main{
-    flex:2;
+main section .description {
+    flex:1;
+    margin: 0.8rem;
 }
-main section .main img{
+main section .imgshow {
+    display: flex;
+}
+/* pikachu */
+main section.pikachu .main{
+    flex:2;
+    margin-right:1rem;
+}
+main section.pikachu .main img{
     width:100%;
     height:100%;
     object-fit: cover;
@@ -92,7 +105,7 @@ main section .aside{
 main section .aside img{
     flex:1;
     width:100%;
-    height:225px;
+    height:235px;
     object-fit: cover;
 }
 main section .aside img:first-child{
@@ -101,6 +114,31 @@ main section .aside img:first-child{
 main section .aside img:last-child{
     border-radius: 0 0 8px 0;
 }
+/* nav */
+main section.nav img{
+    border-radius: 8px;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+/* take-out-client、social、cloud-class */
+main section.miniapp img{
+    flex:1;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+main section.miniapp img:not(last-child){
+    margin-right:0.3rem;
+}
+main section.miniapp img:first-child{
+    border-radius: 4px 0 0 4px;
+}
+main section.miniapp img:last-child{
+    border-radius: 0 4px 4px 0;
+}
+
+/* 页尾 */
 footer{
     background-color: #777;
     padding:20px 0;
@@ -117,6 +155,8 @@ footer img{
 footer ul li a{
     color:#336699;
 }
+
+/* 移动端适配 */
 @media only screen and (max-width: 768px) {
     header {
       padding-top: 20px;
@@ -124,7 +164,7 @@ footer ul li a{
     }
     header h1{
       margin-top:-30px;
-      font-size:32px;
+      font-size: 2.5rem;
     }
     header p{  
         margin-top:0px;
@@ -142,12 +182,12 @@ footer ul li a{
       margin-bottom:-80px;
       text-align:center;
     }
-    main h2{
-      font-size:30px;
+    main h1{
+      font-size:2.3rem;
     }
     main section{
-      margin-left:10px;
-      margin-right:10px;
+      margin-left:1rem;
+      margin-right:1rem;
       flex-direction: column;
     }
     main section .main{

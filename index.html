@@ -19,26 +19,67 @@
         </div>
         <div class="detail layout">
             <h1>我是Lynn</h1>
-            <p>一名热爱前端和健身的程序媛</p>
+            <p>一名热爱美食和健身的前端程序媛</p>
         </div>
         <div class="action">
             <img src="./imgs/down.svg" alt="down">
         </div>
     </header>
     <main class="layout" id="program">
-        <h2>我的开源项目和作品</h2>
-        <section>
-            <div class="main">
-                <img src="./imgs/project1.jpg" alt="PC端">
+        <h1>我的开源项目和作品</h1>
+        <section class="project pikachu">
+            <div class="description">
+                <h2>项目一：画一只皮卡丘</h2>
+                <h4>技术栈：HTML + CSS + jQuery</h4>
+                <p>项目介绍：通过flex布局，利用CSS画一个皮卡丘，并将CSS样式代码动态打印出来。通过jQuery封装一个打印函数，结合setTimeout()动态打印CSS样式。</p>
             </div>
-            <div class="aside">
-                <img src="./imgs/project2.jpg" alt="移动端代码部分">
-                <img src="./imgs/project3.jpg" alt="移动端画图部分">
+            <div class="imgshow">
+                <div class="main">
+                    <img src="./imgs/pikachu-pc.png" alt="PC端">
+                </div>
+                <div class="aside">
+                    <img src="./imgs/pikachu1.png" alt="移动端代码部分">
+                    <img src="./imgs/pikachu2.png" alt="移动端画图部分">
+                </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="project nav">
+            <div class="description">
+                <h3>项目二：个人定制导航网页</h3>
+                <h4>技术栈：HTML + CSS + JavaScript</h4>
+                <p>项目介绍：通过flex布局及原生js开发的个人导航网页，通过添加事件监听跳转对应按键绑定的网站，还可以自定义每个键绑定的导航网站。根据DOM事件委托机制取消事件冒泡，实现目标网站的修改，而阻止按键点击事件的发生。</p>
+            </div>
+            <div class="main">
+                <img src="./imgs/nav-pc.png" alt="PC端">
+            </div>
+        </section>
+        <section class="project miniapp">
+            <div class="description">
+                <h3>项目三：移动端开心外卖Web App</h3>
+                <h4>技术栈：</h4>
+                <h4>前端-Vue + vue-router + vuex + ES6 + webpack + Vant</h4>
+                <h4>后端-Node + Express + Mongodb + Mongoose</h4>
+                <p>项目介绍：项目基于外卖业务的前后台分离Web App，采用模块化、组件化、工程化的模式开发，具体涉及技术：1）通过ajax请求库axios封装ajax请求；2）使用代理服务器解决跨域问题；3）mock数据接口库：mockjs；4）一次性短信验证码和图片验证码技术</p>
+            </div>
+            <div class="imgshow">
+                <img src="./imgs/WebApp-home.png" alt="首页">
+                <img src="./imgs/WebApp-goods.png" alt="商品页">
+                <img src="./imgs/WebApp-login.png" alt="登录页">
+                <img src="./imgs/WebApp-user.png" alt="用户页">
+            </div>
+        </section>
+        <section class="project miniapp">
+            <div class="description">
+                <h3>项目四：自律书圈社交小程序</h3>
+                <h4>技术栈：HTML+CSS+jQuery</h4>
+                <p>项目介绍：通过flex布局，利用CSS画一个皮卡丘，并将CSS样式代码动态打印出来。通过jQuery封装一个打印函数，结合setTimeout()动态打印CSS样式。</p>
+            </div>
+            <div class="imgshow">
+                <img src="./imgs/social-home.png" alt="首页">
+                <img src="./imgs/social-edit-info.png" alt="修改资料页">
+                <img src="./imgs/social-user.png" alt="用户页">
+            </div>
+        </section>
     </main>
     <footer>
         <ul>
