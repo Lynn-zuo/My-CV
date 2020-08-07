@@ -122,10 +122,14 @@ main section.nav img{
     object-fit: cover;
 }
 /* take-out-client、social、cloud-class */
+main section.miniapp .imgshow {
+    display: flex;
+    flex-direction: row;
+}
 main section.miniapp img{
     flex:1;
-    width:100%;
-    height:100%;
+    width:24%;
+    height:24%;
     object-fit: cover;
 }
 main section.miniapp img:not(last-child){
