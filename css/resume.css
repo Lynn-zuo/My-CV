@@ -13,8 +13,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     background: #fff;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 .layout{
     max-width: 900px;
@@ -32,7 +32,7 @@ header{
     background: #3c3c3c;
     width: 100%;
     text-align: center;
-    padding: 15px 0 10px 0;
+    padding: 12px 0 10px 0;
     color:#efefef;
 }
 header > h1{
@@ -45,7 +45,7 @@ header p {
 main {
     flex: 1;
     min-height: calc(100vh - 162px);
-    padding-bottom:30px;
+    padding-bottom:3px;
 }
 aside .avatar{
     text-align: center;
@@ -68,21 +68,21 @@ aside{
 }
 aside section{
     border-bottom: 1px solid #ccc;
-    padding-bottom: 6px;
+    padding-bottom: 5px;
 }
 section.info1{
-    margin: -30px 10px 0 20px;
+    margin: -40px 10px 0 18px;
 }
 section.info2{
-    margin: 15px 10px 0 20px;
+    margin: 15px 10px 0 18px;
 }
 section.info2 h4{
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
-section h2{
+section.info2 h2{
     color: #5c99ca;
     font-size: 16px;
-    margin-bottom:8px;
+    margin-bottom:6px;
 }
 .contact .item {
     display: flex;
@@ -116,20 +116,20 @@ svg:not(:root) {
 }
 main section {
     border-bottom: 1px solid #ccc;
-    margin: 15px 20px 0 18px;
-    padding-bottom: 16px;
+    margin: 10px 20px 0 6px;
+    padding-bottom: 6px;
 }
 main section h4{
-    margin-bottom:8px;
+    margin-bottom:5px;
 }
 main section li {
     margin-left: 1rem;
 }
-main section p {
+main section p.paragraph{
     text-indent: 1rem;
 }
 main section h4:not(:first-child){
-    margin-top:15px;
+    margin-top:3px;
 }
 
 @media only screen and  (max-width: 768px) {
