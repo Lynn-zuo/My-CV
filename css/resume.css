@@ -145,7 +145,7 @@ main section h4:not(:first-child){
     }
     aside {
       width: 100%;
-      padding-top: 30px;
+      padding-top: 50px;
     }
     aside .avatar {
         top: -80px;
