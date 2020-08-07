@@ -142,6 +142,7 @@ main section.miniapp img:last-child{
 footer{
     background-color: #777;
     padding:20px 0;
+    margin-top: 20px;
 }
 footer li{
     display:flex;

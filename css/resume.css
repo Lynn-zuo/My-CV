@@ -7,6 +7,7 @@ body{
     font: 14px/1.5 Arial;
     color: #666;
     background: #efefef;
+    font-family:"Times New Roman",Georgia,Serif;
 }
 #page{
     display: flex;
@@ -31,30 +32,25 @@ header{
     background: #3c3c3c;
     width: 100%;
     text-align: center;
-    padding: 40px 0 10px 0;
+    padding: 15px 0 10px 0;
     color:#efefef;
 }
+header > h1{
+    font-size: 2rem;
+    font-family: Cursive;
+}
 header p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 main {
     flex: 1;
     min-height: calc(100vh - 162px);
-}
-header > h1{
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-aside{
-    width: 250px;
-    border-right: 1px solid #ccc;
-    position: relative;
-    padding-top: 100px;
+    padding-bottom:30px;
 }
 aside .avatar{
     text-align: center;
     position: absolute;
-    top: -110px;
+    top: -100px;
     width: 100%;
 }
 aside .avatar img {
@@ -63,15 +59,22 @@ aside .avatar img {
     border-radius: 50%;
     border: 1px solid #ccc;
 }
-section{
+aside{
+    width: 300px;
+    border-right: 1px solid #ccc;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom:30px;
+}
+aside section{
     border-bottom: 1px solid #ccc;
     padding-bottom: 6px;
 }
 section.info1{
-    margin: -30px 20px 0 20px;
+    margin: -30px 10px 0 20px;
 }
 section.info2{
-    margin: 15px 20px 0 20px;
+    margin: 15px 10px 0 20px;
 }
 section.info2 h4{
     margin-bottom: 3px;
@@ -113,11 +116,11 @@ svg:not(:root) {
 }
 main section {
     border-bottom: 1px solid #ccc;
-    margin: 30px 20px 0 20px;
-    padding-bottom: 20px;
+    margin: 15px 20px 0 18px;
+    padding-bottom: 16px;
 }
 main section h4{
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 main section li {
     margin-left: 1rem;
@@ -133,6 +136,12 @@ main section h4:not(:first-child){
     header {
       padding-top: 20px;
       padding-bottom: 90px;
+    }
+    header > h1{
+        font-size: 1.8rem;
+    }
+    header p {
+        font-size: 1rem;
     }
     aside {
       width: 100%;
