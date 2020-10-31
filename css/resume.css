@@ -32,7 +32,7 @@ header{
     background: #3c3c3c;
     width: 100%;
     text-align: center;
-    padding: 12px 0 10px 0;
+    padding: 10px 0 8px 0;
     color:#efefef;
 }
 header > h1{
@@ -120,7 +120,7 @@ main section {
     padding-bottom: 6px;
 }
 main section h4{
-    margin-bottom:5px;
+    margin-bottom:3px;
 }
 main section li {
     margin-left: 1rem;
@@ -129,9 +129,8 @@ main section p.paragraph{
     text-indent: 1rem;
 }
 main section h4:not(:first-child){
-    margin-top:3px;
+    margin-top:2px;
 }
-
 @media only screen and  (max-width: 768px) {
     header {
       padding-top: 20px;
